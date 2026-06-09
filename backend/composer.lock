@@ -6246,12 +6246,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/samuelreichor/craft-llmify.git",
-                "reference": "8192e084645df6d9dd23c6aea24ba91f39559a39"
+                "reference": "d9112b1b2ec56bc4b0a88ecacbe6ed6775ef40a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/samuelreichor/craft-llmify/zipball/8192e084645df6d9dd23c6aea24ba91f39559a39",
-                "reference": "8192e084645df6d9dd23c6aea24ba91f39559a39",
+                "url": "https://api.github.com/repos/samuelreichor/craft-llmify/zipball/d9112b1b2ec56bc4b0a88ecacbe6ed6775ef40a9",
+                "reference": "d9112b1b2ec56bc4b0a88ecacbe6ed6775ef40a9",
                 "shasum": ""
             },
             "require": {
@@ -6293,7 +6293,7 @@
                 "rss": "https://github.com/samuelreichor/craft-llmify/releases.atom",
                 "source": "https://github.com/samuelreichor/craft-llmify"
             },
-            "time": "2026-06-09T08:36:15+00:00"
+            "time": "2026-06-09T09:42:10+00:00"
         },
         {
             "name": "seld/cli-prompt",

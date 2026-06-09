@@ -2,6 +2,7 @@
 export default defineEventHandler(async (event) => {
   try {
     const content = await $fetch(`${llmifyApiBase()}/llms-txt`, {
+      headers: llmifyHeaders(),
       responseType: 'text',
     })
 

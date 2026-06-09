@@ -10,6 +10,7 @@ export default defineEventHandler(async (event) => {
 
   try {
     const content = await $fetch(`${llmifyApiBase()}/page`, {
+      headers: llmifyHeaders(),
       params: { uri },
       responseType: 'text',
     })

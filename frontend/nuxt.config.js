@@ -23,6 +23,9 @@ export default defineNuxtConfig({
     port: 3000
   },
   runtimeConfig: {
+    // Server-only secret: sent to the LLMify API as the X-Llmify-Token header.
+    // Leave empty if the LLMify API is not token-protected.
+    LLMIFY_API_TOKEN: process.env.LLMIFY_API_TOKEN,
     public: {
       GRAPHQL_TOKEN: process.env.GRAPHQL_TOKEN,
       CRAFT_URL: process.env.CRAFT_URL,

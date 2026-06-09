@@ -17,3 +17,13 @@ export function llmifyApiBase() {
 
   return `${config.CRAFT_URL.replace(/\/$/, '')}/actions/llmify/api`
 }
+
+/**
+ * Auth header for the LLMify API. Returns the `X-Llmify-Token` header when an
+ * API token is configured, otherwise an empty object (the API is unprotected).
+ */
+export function llmifyHeaders() {
+  const token = useRuntimeConfig().LLMIFY_API_TOKEN
+
+  return token ? { 'X-Llmify-Token': token } : {}
+}
