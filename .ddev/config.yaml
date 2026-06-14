@@ -31,6 +31,16 @@ web_environment:
   - CRAFT_CMD_ROOT=/var/www/html/backend
   - NUXT_DEVTOOLS_HOST=0.0.0.0
 
+# Auto-start the Nuxt dev server (HMR) on :3000 — nginx_full/nuxt-site.conf
+# proxies the primary host to it, so `ddev start` brings up the frontend with hot
+# reload, no manual `ddev fe npm run dev` needed. Runtime config (CRAFT_URL,
+# GraphQL token, …) is read from the process environment (web_environment), so no
+# frontend/.env file is required.
+web_extra_daemons:
+  - name: nuxt
+    command: "npm install && npm run dev"
+    directory: /var/www/html/frontend
+
 # Key features of DDEV's config.yaml:
 
 # name: <projectname> # Name of the project, automatically provides
